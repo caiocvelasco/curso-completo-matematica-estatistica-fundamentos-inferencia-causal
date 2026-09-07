@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html",
+    "href": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html",
+    "title": "Fundamentos de Matemática e Estatística para Inferência Causal",
+    "section": "",
+    "text": "Entenda a Matemática e a Estatística por trás de Data Science, Experimentação e Inferência Causal, sem atalhos e sem perder a intuição.\nQuero ser avisado"
+  },
+  {
+    "objectID": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#motivacao",
+    "href": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#motivacao",
+    "title": "Fundamentos de Matemática e Estatística para Inferência Causal",
+    "section": "Por que este curso existe?",
+    "text": "Por que este curso existe?\nExiste hoje uma quantidade enorme de conteúdo ensinando ferramentas, modelos e técnicas.\nMas existe uma diferença entre saber executar algo e entender por que aquilo funciona.\nPerguntas como:\n\nO que realmente é um p-valor?\nO que é um estimador?\nDe onde vem a incerteza de uma regressão?\nPor que falamos em repetir amostras se observamos apenas uma?\nQuando uma associação pode ser interpretada como causal?\n\ncomeçam muito antes da ferramenta.\nElas passam por Probabilidade, Inferência Estatística, Regressão e pela forma como pensamos sobre o processo que gera os dados, o tal “DGP”.\n\nVocê é capaz de entender coisas complexas.\nO que muitas vezes falta é construir cada ideia a partir daquilo que você já entende.\n\nA proposta deste curso é unir o rigor de uma boa formação universitária com a clareza e a aplicação que muitas vezes faltam no ensino tradicional.\nA ideia é fazer isso sem tratar a matemática como uma caixa-preta e sem transformar cada assunto em uma disciplina acadêmica chata de seis meses."
+  },
+  {
+    "objectID": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#conteudo",
+    "href": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#conteudo",
+    "title": "Fundamentos de Matemática e Estatística para Inferência Causal",
+    "section": "🎯 O que você vai aprender",
+    "text": "🎯 O que você vai aprender\nO curso constrói o raciocínio em camadas.\nA ideia não é decorar métodos, mas entender de onde eles vêm, o que assumem e por que funcionam.\n\n\n1. Probabilidade - como pensamos sobre incerteza\nVariáveis aleatórias, distribuições, expectativa, variância, condicionamento, independência, amostragem e a ideia de um Data Generating Process (DGP).\n\nComo representar matematicamente um mundo em que os dados poderiam ter sido diferentes?\n\n\n\n\n2. Inferência Estatística - como aprendemos com uma amostra\nEstimadores, sampling distributions, Lei dos Grandes Números (LLM), Teorema Central do Limite (CLT), erro padrão, intervalos de confiança e testes de hipótese.\n\nComo usar aquilo que observamos para aprender sobre aquilo que não observamos?\n\n\n\n\n3. Regressão - como modelamos relações entre variáveis\nRegressão linear, OLS, interpretação dos coeficientes, incerteza, suposições e múltiplas variáveis.\n\nO que estamos realmente dizendo quando afirmamos que X está associado a Y, em média?\n\n\n\n\n4. Inferência Causal - quando podemos falar em causa\nPotential outcomes, tratamento e controle, experimentos randomizados, confounding, identificação e os fundamentos dos principais desenhos causais.\n\nQuando podemos sair de “X está associado a Y” para “X causou uma mudança em Y”?\n\n\n\nAo final, você terá uma base sólida para avançar em Experimentação, A/B Testing, Econometria, Data Science e Causal Machine Learning."
+  },
+  {
+    "objectID": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#publico",
+    "href": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#publico",
+    "title": "Fundamentos de Matemática e Estatística para Inferência Causal",
+    "section": "Para quem é este curso?",
+    "text": "Para quem é este curso?\nEste curso é para quem trabalha ou quer trabalhar com dados e sente que, em algum momento, começou a usar conceitos que nunca teve oportunidade de entender profundamente.\nNo bom português: É para quem está sambando no meio de tanta coisa e precisa de estrutura.\nEspecialmente para quem:\n\ntrabalha com Data Science, Analytics, Machine Learning ou Experimentação;\njá estudou alguma Estatística, mas sente lacunas na base;\nquer estudar Inferência Causal com mais profundidade;\nconsegue executar métodos, mas frequentemente se pergunta por que eles funcionam;\nprefere entender uma ideia a simplesmente decorar uma fórmula."
+  },
+  {
+    "objectID": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#requisitos",
+    "href": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#requisitos",
+    "title": "Fundamentos de Matemática e Estatística para Inferência Causal",
+    "section": "🧩 Pré-requisitos",
+    "text": "🧩 Pré-requisitos\nVocê não precisa ter formação em Matemática, Estatística ou Engenharia.\nÉ suficiente ter:\n\nmatemática básica de ensino médio;\nfamiliaridade com funções e gráficos;\ndisposição para raciocinar matematicamente;\nleitura básica de termos técnicos em inglês.\n\nPython é bem-vindo, mas não obrigatório. Usaremos quanto necessário e será simples."
+  },
+  {
+    "objectID": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#formato",
+    "href": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#formato",
+    "title": "Fundamentos de Matemática e Estatística para Inferência Causal",
+    "section": "🧱 Como funciona",
+    "text": "🧱 Como funciona\n\nAulas ao vivo\nExercícios\nPython para simulações e aplicações\nAulas gravadas quando necessário\nProjetos conforme avançarmos\nComunidade e feedback\n\nA matemática entra quando ela ajuda a entender a ideia, não como decoração e nem como algo a ser evitado."
+  },
+  {
+    "objectID": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#sobre",
+    "href": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#sobre",
+    "title": "Fundamentos de Matemática e Estatística para Inferência Causal",
+    "section": "Sobre mim",
+    "text": "Sobre mim\n\n\n\nCaio Velasco é Engenheiro Mecânico Cum Laude pela UFRJ e Mestre em Economia e Políticas Públicas pela UCLA, com formação em Econometria e Inferência Causal.\nTambém cursou parte de um doutorado em Economia na Holanda e trabalhou nos últimos anos com Data Science, Analytics Engineering e Data Engineering em projetos para empresas no Brasil, Estados Unidos e Europa.\nAntes disso, fundou o MePrepara, plataforma de ensino de Matemática para os exames GRE e GMAT. Quase gabaritou a parte de matemática do GRE, atingindo 94th percentile (168 Quant).\nSua abordagem combina rigor matemático, intuição e aplicação.\n\nMeu objetivo não é fazer você decorar mais coisas.\nÉ fazer com que cada nova coisa passe a fazer sentido."
+  },
+  {
+    "objectID": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#formulario",
+    "href": "curso-completo-matematica-estatistica-fundamentos-inferencia-causal.html#formulario",
+    "title": "Fundamentos de Matemática e Estatística para Inferência Causal",
+    "section": "📝 Quero participar",
+    "text": "📝 Quero participar\nSe a proposta fizer sentido para você, deixe seu contato abaixo.\nVocê será avisado quando abrirem as inscrições.\n\nCarregando…"
+  }
+]

@@ -1,0 +1,151 @@
+---
+title: "Fundamentos de Matemática e Estatística para Inferência Causal"
+format: html
+---
+
+<a name="topo"></a>
+
+Entenda a **Matemática e a Estatística** por trás de Data Science, Experimentação e Inferência Causal, **sem atalhos e sem perder a intuição**.
+
+[**Quero ser avisado**](#formulario)
+
+## Por que este curso existe? {#motivacao}
+
+Existe hoje uma quantidade enorme de conteúdo ensinando **ferramentas, modelos e técnicas**.
+
+Mas existe uma diferença entre saber executar algo e **entender por que aquilo funciona**.
+
+Perguntas como:
+
+- O que realmente é um *p-valor*?
+- O que é um estimador?
+- De onde vem a incerteza de uma regressão?
+- Por que falamos em repetir amostras se observamos apenas uma?
+- Quando uma associação pode ser interpretada como causal?
+
+começam muito antes da ferramenta.
+
+Elas passam por **Probabilidade, Inferência Estatística, Regressão e pela forma como pensamos sobre o processo que gera os dados, o tal "DGP"**.
+
+> **Você é capaz de entender coisas complexas.**  
+> O que muitas vezes falta é construir cada ideia a partir daquilo que você já entende.
+
+A proposta deste curso é unir **o rigor de uma boa formação universitária** com a clareza e a aplicação que muitas vezes faltam no ensino tradicional.
+
+A ideia é fazer isso sem tratar a matemática como uma caixa-preta e sem transformar cada assunto em uma disciplina acadêmica chata de seis meses.
+
+## 🎯 O que você vai aprender {#conteudo}
+
+O curso constrói o raciocínio **em camadas**.
+
+A ideia não é decorar métodos, mas entender **de onde eles vêm, o que assumem e por que funcionam**.
+
+::: {.content-scroll}
+
+### 1. Probabilidade - como pensamos sobre incerteza
+
+Variáveis aleatórias, distribuições, expectativa, variância, condicionamento, independência, amostragem e a ideia de um **Data Generating Process (DGP)**.
+
+> Como representar matematicamente um mundo em que os dados poderiam ter sido diferentes?
+
+---
+
+### 2. Inferência Estatística - como aprendemos com uma amostra
+
+Estimadores, *sampling distributions*, Lei dos Grandes Números (LLM), Teorema Central do Limite (CLT), erro padrão, intervalos de confiança e testes de hipótese.
+
+> Como usar aquilo que observamos para aprender sobre aquilo que não observamos?
+
+---
+
+### 3. Regressão - como modelamos relações entre variáveis
+
+Regressão linear, OLS, interpretação dos coeficientes, incerteza, suposições e múltiplas variáveis.
+
+> O que estamos realmente dizendo quando afirmamos que X está associado a Y, **em média**?
+
+---
+
+### 4. Inferência Causal - quando podemos falar em causa
+
+*Potential outcomes*, tratamento e controle, experimentos randomizados, *confounding*, identificação e os fundamentos dos principais desenhos causais.
+
+> Quando podemos sair de **“X está associado a Y”** para **“X causou uma mudança em Y”**?
+
+:::
+
+Ao final, você terá uma base sólida para avançar em **Experimentação, A/B Testing, Econometria, Data Science e Causal Machine Learning**.
+
+## Para quem é este curso? {#publico}
+
+Este curso é para quem trabalha ou quer trabalhar com dados e sente que, em algum momento, começou a **usar conceitos que nunca teve oportunidade de entender profundamente**.
+
+No bom português: É para quem está sambando no meio de tanta coisa e precisa de estrutura.
+
+Especialmente para quem:
+
+- trabalha com **Data Science, Analytics, Machine Learning ou Experimentação**;
+- já estudou alguma Estatística, mas sente lacunas na base;
+- quer estudar **Inferência Causal** com mais profundidade;
+- consegue executar métodos, mas frequentemente se pergunta **por que eles funcionam**;
+- prefere entender uma ideia a simplesmente decorar uma fórmula.
+
+## 🧩 Pré-requisitos {#requisitos}
+
+Você **não precisa** ter formação em Matemática, Estatística ou Engenharia.
+
+É suficiente ter:
+
+- matemática básica de ensino médio;
+- familiaridade com funções e gráficos;
+- disposição para raciocinar matematicamente;
+- leitura básica de termos técnicos em inglês.
+
+**Python é bem-vindo, mas não obrigatório. Usaremos quanto necessário e será simples.**
+
+## 🧱 Como funciona {#formato}
+
+- **Aulas ao vivo**
+- **Exercícios**
+- **Python para simulações e aplicações**
+- **Aulas gravadas quando necessário**
+- **Projetos conforme avançarmos**
+- **Comunidade e feedback**
+
+A matemática entra quando ela **ajuda a entender a ideia**, não como decoração e nem como algo a ser evitado.
+
+## Sobre mim {#sobre}
+
+<p align="center">
+  <img src="images/caio.jpg"
+       alt="Caio Velasco"
+       width="180"
+       style="border-radius: 50%; margin-top: 10px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+</p>
+
+**Caio Velasco** é Engenheiro Mecânico *Cum Laude* pela **UFRJ** e Mestre em Economia e Políticas Públicas pela **UCLA**, com formação em Econometria e Inferência Causal.
+
+Também cursou parte de um doutorado em Economia na Holanda e trabalhou nos últimos anos com **Data Science, Analytics Engineering e Data Engineering** em projetos para empresas no Brasil, Estados Unidos e Europa.
+
+Antes disso, fundou o **MePrepara**, plataforma de ensino de Matemática para os exames GRE e GMAT. Quase gabaritou a parte de matemática do GRE, atingindo **94th percentile** (168 Quant).
+
+Sua abordagem combina **rigor matemático, intuição e aplicação**.
+
+> Meu objetivo não é fazer você decorar mais coisas.  
+> É fazer com que cada nova coisa passe a fazer sentido.
+
+## 📝 Quero participar {#formulario}
+
+Se a proposta fizer sentido para você, deixe seu contato abaixo.
+
+Você será avisado quando abrirem as inscrições.
+
+<iframe
+src="https://docs.google.com/forms/d/e/1FAIpQLScGXyserKH8vEb4IhT7G2YLYf6_htcMTWx6YGRoOZH9XDKjnQ/viewform?embedded=true"
+width="100%"
+height="800"
+frameborder="0"
+marginheight="0"
+marginwidth="0">
+Carregando…
+</iframe>
