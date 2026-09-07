@@ -85,7 +85,7 @@ The packages listed in `requirements.txt` are installed inside `.venv`.
 ├── _quarto.yml            # Quarto configuration
 ├── .env                   # Local environment variables
 ├── .gitignore
-├── curso-completo-*.qmd   # Main website page
+├── index.qmd              # Main website page
 ├── README.md
 ├── requirements.txt       # Python dependencies
 ├── styles.css             # Custom CSS
