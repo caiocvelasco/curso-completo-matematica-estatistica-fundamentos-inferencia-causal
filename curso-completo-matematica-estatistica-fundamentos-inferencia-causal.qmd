@@ -3,7 +3,7 @@ title: "Fundamentos de Matemática e Estatística para Inferência Causal"
 format: html
 ---
 
-<a name="topo"></a>
+<a id="topo"></a>
 
 Entenda a **Matemática e a Estatística** por trás de Data Science, Experimentação e Inferência Causal, **sem atalhos e sem perder a intuição**.
 
@@ -33,6 +33,8 @@ Elas passam por **Probabilidade, Inferência Estatística, Regressão e pela for
 A proposta deste curso é unir **o rigor de uma boa formação universitária** com a clareza e a aplicação que muitas vezes faltam no ensino tradicional.
 
 A ideia é fazer isso sem tratar a matemática como uma caixa-preta e sem transformar cada assunto em uma disciplina acadêmica chata de seis meses.
+
+<a id="objetivo"></a>
 
 ## 🎯 O que você vai aprender {#conteudo}
 
