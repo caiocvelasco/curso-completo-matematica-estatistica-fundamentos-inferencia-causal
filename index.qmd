@@ -137,6 +137,10 @@ Estou preparando a primeira turma do curso. Deixe seus dados para receber as inf
 ENTRAR NA WAITLIST →
 </button>
 
+<p class="waitlist-privacy">
+Ao entrar na waitlist, você concorda em receber comunicações sobre este curso. Seus dados não serão compartilhados com terceiros.
+</p>
+
 </form>
 
 <div id="waitlist-success" hidden>

@@ -390,6 +390,14 @@ html {
   box-shadow: none;
 }
 
+
+.waitlist-privacy {
+  margin: 0.75rem 0 0 0;
+  color: #7a8581;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
 #waitlist-success {
   margin-top: 0.4rem;
   padding: 1rem 1.1rem;
