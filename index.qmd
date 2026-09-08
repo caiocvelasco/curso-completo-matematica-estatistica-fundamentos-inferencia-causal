@@ -296,6 +296,17 @@ Vamos usá-lo quando ajudar a visualizar, simular ou aplicar os conceitos.
 
 <h2>Caio Velasco</h2>
 
+<a
+  class="linkedin-link"
+  href="https://www.linkedin.com/in/caiovelasco/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="LinkedIn de Caio Velasco"
+>
+  <span class="linkedin-icon">in</span>
+  <span>LinkedIn</span>
+</a>
+
 <p>
 Sou Engenheiro Mecânico <em>Cum Laude</em> pela <strong>UFRJ</strong> e Mestre em Economia e Políticas Públicas pela <strong>UCLA</strong>, onde estudei Econometria e Inferência Causal.
 </p>

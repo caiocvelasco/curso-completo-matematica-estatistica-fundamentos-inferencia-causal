@@ -821,6 +821,35 @@ html {
   line-height: 1.35;
 }
 
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: -0.2rem 0 1.4rem 0;
+  color: #0a66c2;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.linkedin-link:hover {
+  color: #084f96;
+  text-decoration: none;
+}
+
+.linkedin-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  background: #0a66c2;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
 /* --------- CTA final --------- */
 .final-cta {
   max-width: var(--waitlist-max);
