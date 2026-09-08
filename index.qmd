@@ -120,6 +120,8 @@ Estou preparando a primeira turma do curso. Deixe seus dados para receber as inf
   type="tel"
   name="entry.1489132314"
   autocomplete="tel"
+  inputmode="numeric"
+  maxlength="15"
   placeholder="(21) 99999-0021"
   required
 >
@@ -144,7 +146,15 @@ Ao entrar na waitlist, você concorda em receber comunicações sobre este curso
 </form>
 
 <div id="waitlist-success" hidden>
-✓ Pronto! Você entrou na waitlist. Obrigado mesmo por confiar!
+
+<div class="success-icon">✓</div>
+
+<strong>Você entrou na waitlist!</strong>
+
+<p>
+Obrigado pela confiança! Vou te avisar por email assim que tiver novidades sobre a primeira turma.
+</p>
+
 </div>
 
 <iframe
@@ -160,10 +170,47 @@ Ao entrar na waitlist, você concorda em receber comunicações sobre este curso
   const iframe = document.getElementById("waitlist-hidden-iframe");
   const success = document.getElementById("waitlist-success");
   const button = document.getElementById("waitlist-submit");
+  const whatsapp = document.getElementById("waitlist-whatsapp");
 
   let submitted = false;
 
-  form.addEventListener("submit", function () {
+  function formatWhatsapp(value) {
+
+    const digits = value.replace(/\D/g, "").slice(0, 11);
+
+    if (digits.length <= 2) {
+      return digits.length ? `(${digits}` : "";
+    }
+
+    if (digits.length <= 6) {
+      return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+    }
+
+    if (digits.length <= 10) {
+      return `(${digits.slice(0, 2)}) ${digits.slice(2, 6)}-${digits.slice(6)}`;
+    }
+
+    return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+  }
+
+  whatsapp.addEventListener("input", function () {
+    this.value = formatWhatsapp(this.value);
+    this.setCustomValidity("");
+  });
+
+  form.addEventListener("submit", function (event) {
+
+    const digits = whatsapp.value.replace(/\D/g, "");
+
+    if (digits.length < 10) {
+      event.preventDefault();
+      whatsapp.setCustomValidity("Digite um WhatsApp válido com DDD.");
+      whatsapp.reportValidity();
+      return;
+    }
+
+    whatsapp.setCustomValidity("");
+
     submitted = true;
 
     button.disabled = true;

@@ -233,7 +233,7 @@ Estou preparando a primeira turma do curso. Deixe seus dados para receber as inf
 <form id="waitlist-native-form" action="https://docs.google.com/forms/d/e/1FAIpQLScyDL0yrgmfypED88UhUn9P0kuiKJo1PqZxPzEBx6vacdz6kQ/formResponse" method="POST" target="waitlist-hidden-iframe">
 <p><label for="waitlist-name">Nome completo *</label> <input id="waitlist-name" type="text" name="entry.2109223730" autocomplete="name" required=""></p>
 <p><label for="waitlist-email">Email *</label> <input id="waitlist-email" type="email" name="entry.1826589210" autocomplete="email" required=""></p>
-<p><label for="waitlist-whatsapp">WhatsApp *</label> <input id="waitlist-whatsapp" type="tel" name="entry.1489132314" autocomplete="tel" placeholder="(21) 99999-0021" required=""></p>
+<p><label for="waitlist-whatsapp">WhatsApp *</label> <input id="waitlist-whatsapp" type="tel" name="entry.1489132314" autocomplete="tel" inputmode="numeric" maxlength="15" placeholder="(21) 99999-0021" required=""></p>
 <p><label for="waitlist-location">Estado, Cidade *</label> <input id="waitlist-location" type="text" name="entry.1068005173" placeholder="RJ, Rio de Janeiro" required=""></p>
 <button type="submit" id="waitlist-submit">
 ENTRAR NA WAITLIST →
@@ -243,7 +243,13 @@ Ao entrar na waitlist, você concorda em receber comunicações sobre este curso
 </p>
 </form>
 <div id="waitlist-success" hidden="">
-<p>✓ Pronto! Você entrou na waitlist. Obrigado mesmo por confiar!</p>
+<div class="success-icon">
+✓
+</div>
+<p><strong>Você entrou na waitlist!</strong></p>
+<p>
+Obrigado pela confiança! Vou te avisar por email assim que tiver novidades sobre a primeira turma.
+</p>
 </div>
 <iframe name="waitlist-hidden-iframe" id="waitlist-hidden-iframe" style="display:none;">
 </iframe>
@@ -254,10 +260,47 @@ Ao entrar na waitlist, você concorda em receber comunicações sobre este curso
   const iframe = document.getElementById("waitlist-hidden-iframe");
   const success = document.getElementById("waitlist-success");
   const button = document.getElementById("waitlist-submit");
+  const whatsapp = document.getElementById("waitlist-whatsapp");
 
   let submitted = false;
 
-  form.addEventListener("submit", function () {
+  function formatWhatsapp(value) {
+
+    const digits = value.replace(/\D/g, "").slice(0, 11);
+
+    if (digits.length <= 2) {
+      return digits.length ? `(${digits}` : "";
+    }
+
+    if (digits.length <= 6) {
+      return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+    }
+
+    if (digits.length <= 10) {
+      return `(${digits.slice(0, 2)}) ${digits.slice(2, 6)}-${digits.slice(6)}`;
+    }
+
+    return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+  }
+
+  whatsapp.addEventListener("input", function () {
+    this.value = formatWhatsapp(this.value);
+    this.setCustomValidity("");
+  });
+
+  form.addEventListener("submit", function (event) {
+
+    const digits = whatsapp.value.replace(/\D/g, "");
+
+    if (digits.length < 10) {
+      event.preventDefault();
+      whatsapp.setCustomValidity("Digite um WhatsApp válido com DDD.");
+      whatsapp.reportValidity();
+      return;
+    }
+
+    whatsapp.setCustomValidity("");
+
     submitted = true;
 
     button.disabled = true;
