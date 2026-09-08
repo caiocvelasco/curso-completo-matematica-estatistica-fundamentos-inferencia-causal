@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fundamentos de Matemática e Estatística para Inferência Causal</title>
+<title>Fundamentos para Inferência Causal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,10 +26,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,18 +37,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -78,7 +62,6 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -89,28 +72,28 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#motivacao"> 
-<span class="menu-text">Motivação</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html#objetivo"> 
-<span class="menu-text">Objetivo</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html#requisitos"> 
-<span class="menu-text">Pré-requisitos</span></a>
+    <a class="nav-link" href="./index.html#curso"> 
+<span class="menu-text">O curso</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html#conteudo"> 
 <span class="menu-text">Conteúdo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html#formulario"> 
-<span class="menu-text">Inscreva-se</span></a>
+    <a class="nav-link" href="./index.html#publico"> 
+<span class="menu-text">Para quem</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#requisitos"> 
+<span class="menu-text">Pré-requisitos</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./index.html#sobre"> 
 <span class="menu-text">Sobre</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#waitlist"> 
+<span class="menu-text">Junte-se a Waitlist</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -125,152 +108,360 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Fundamentos de Matemática e Estatística para Inferência Causal</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p><a id="topo"></a></p>
-<p>Entenda a <strong>Matemática e a Estatística</strong> por trás de Data Science, Experimentação e Inferência Causal, <strong>sem atalhos e sem perder a intuição</strong>.</p>
-<p><a href="#formulario"><strong>Quero ser avisado</strong></a></p>
-<section id="motivacao" class="level2">
-<h2 class="anchored" data-anchor-id="motivacao">Por que este curso existe?</h2>
-<p>Existe hoje uma quantidade enorme de conteúdo ensinando <strong>ferramentas, modelos e técnicas</strong>.</p>
-<p>Mas existe uma diferença entre saber executar algo e <strong>entender por que aquilo funciona</strong>.</p>
-<p>Perguntas como:</p>
-<ul>
-<li>O que realmente é um <em>p-valor</em>?</li>
-<li>O que é um estimador?</li>
-<li>De onde vem a incerteza de uma regressão?</li>
-<li>Por que falamos em repetir amostras se observamos apenas uma?</li>
-<li>Quando uma associação pode ser interpretada como causal?</li>
-</ul>
-<p>começam muito antes da ferramenta.</p>
-<p>Elas passam por <strong>Probabilidade, Inferência Estatística, Regressão e pela forma como pensamos sobre o processo que gera os dados, o tal “DGP”</strong>.</p>
-<blockquote class="blockquote">
-<p><strong>Você é capaz de entender coisas complexas.</strong><br>
-O que muitas vezes falta é construir cada ideia a partir daquilo que você já entende.</p>
-</blockquote>
-<p>A proposta deste curso é unir <strong>o rigor de uma boa formação universitária</strong> com a clareza e a aplicação que muitas vezes faltam no ensino tradicional.</p>
-<p>A ideia é fazer isso sem tratar a matemática como uma caixa-preta e sem transformar cada assunto em uma disciplina acadêmica chata de seis meses.</p>
-<p><a id="objetivo"></a></p>
-</section>
-<section id="conteudo" class="level2">
-<h2 class="anchored" data-anchor-id="conteudo">🎯 O que você vai aprender</h2>
-<p>O curso constrói o raciocínio <strong>em camadas</strong>.</p>
-<p>A ideia não é decorar métodos, mas entender <strong>de onde eles vêm, o que assumem e por que funcionam</strong>.</p>
-<div class="content-scroll">
-<section id="probabilidade---como-pensamos-sobre-incerteza" class="level3">
-<h3 class="anchored" data-anchor-id="probabilidade---como-pensamos-sobre-incerteza">1. Probabilidade - como pensamos sobre incerteza</h3>
-<p>Variáveis aleatórias, distribuições, expectativa, variância, condicionamento, independência, amostragem e a ideia de um <strong>Data Generating Process (DGP)</strong>.</p>
-<blockquote class="blockquote">
-<p>Como representar matematicamente um mundo em que os dados poderiam ter sido diferentes?</p>
-</blockquote>
-<hr>
-</section>
-<section id="inferência-estatística---como-aprendemos-com-uma-amostra" class="level3">
-<h3 class="anchored" data-anchor-id="inferência-estatística---como-aprendemos-com-uma-amostra">2. Inferência Estatística - como aprendemos com uma amostra</h3>
-<p>Estimadores, <em>sampling distributions</em>, Lei dos Grandes Números (LLM), Teorema Central do Limite (CLT), erro padrão, intervalos de confiança e testes de hipótese.</p>
-<blockquote class="blockquote">
-<p>Como usar aquilo que observamos para aprender sobre aquilo que não observamos?</p>
-</blockquote>
-<hr>
-</section>
-<section id="regressão---como-modelamos-relações-entre-variáveis" class="level3">
-<h3 class="anchored" data-anchor-id="regressão---como-modelamos-relações-entre-variáveis">3. Regressão - como modelamos relações entre variáveis</h3>
-<p>Regressão linear, OLS, interpretação dos coeficientes, incerteza, suposições e múltiplas variáveis.</p>
-<blockquote class="blockquote">
-<p>O que estamos realmente dizendo quando afirmamos que X está associado a Y, <strong>em média</strong>?</p>
-</blockquote>
-<hr>
-</section>
-<section id="inferência-causal---quando-podemos-falar-em-causa" class="level3">
-<h3 class="anchored" data-anchor-id="inferência-causal---quando-podemos-falar-em-causa">4. Inferência Causal - quando podemos falar em causa</h3>
-<p><em>Potential outcomes</em>, tratamento e controle, experimentos randomizados, <em>confounding</em>, identificação e os fundamentos dos principais desenhos causais.</p>
-<blockquote class="blockquote">
-<p>Quando podemos sair de <strong>“X está associado a Y”</strong> para <strong>“X causou uma mudança em Y”</strong>?</p>
-</blockquote>
-</section>
-</div>
-<p>Ao final, você terá uma base sólida para avançar em <strong>Experimentação, A/B Testing, Econometria, Data Science e Causal Machine Learning</strong>.</p>
-</section>
-<section id="publico" class="level2">
-<h2 class="anchored" data-anchor-id="publico">Para quem é este curso?</h2>
-<p>Este curso é para quem trabalha ou quer trabalhar com dados e sente que, em algum momento, começou a <strong>usar conceitos que nunca teve oportunidade de entender profundamente</strong>.</p>
-<p>No bom português: É para quem está sambando no meio de tanta coisa e precisa de estrutura.</p>
-<p>Especialmente para quem:</p>
-<ul>
-<li>trabalha com <strong>Data Science, Analytics, Machine Learning ou Experimentação</strong>;</li>
-<li>já estudou alguma Estatística, mas sente lacunas na base;</li>
-<li>quer estudar <strong>Inferência Causal</strong> com mais profundidade;</li>
-<li>consegue executar métodos, mas frequentemente se pergunta <strong>por que eles funcionam</strong>;</li>
-<li>prefere entender uma ideia a simplesmente decorar uma fórmula.</li>
-</ul>
-</section>
-<section id="requisitos" class="level2">
-<h2 class="anchored" data-anchor-id="requisitos">🧩 Pré-requisitos</h2>
-<p>Você <strong>não precisa</strong> ter formação em Matemática, Estatística ou Engenharia.</p>
-<p>É suficiente ter:</p>
-<ul>
-<li>matemática básica de ensino médio;</li>
-<li>familiaridade com funções e gráficos;</li>
-<li>disposição para raciocinar matematicamente;</li>
-<li>leitura básica de termos técnicos em inglês.</li>
-</ul>
-<p><strong>Python é bem-vindo, mas não obrigatório. Usaremos quanto necessário e será simples.</strong></p>
-</section>
-<section id="formato" class="level2">
-<h2 class="anchored" data-anchor-id="formato">🧱 Como funciona</h2>
-<ul>
-<li><strong>Aulas ao vivo</strong></li>
-<li><strong>Exercícios</strong></li>
-<li><strong>Python para simulações e aplicações</strong></li>
-<li><strong>Aulas gravadas quando necessário</strong></li>
-<li><strong>Projetos conforme avançarmos</strong></li>
-<li><strong>Comunidade e feedback</strong></li>
-</ul>
-<p>A matemática entra quando ela <strong>ajuda a entender a ideia</strong>, não como decoração e nem como algo a ser evitado.</p>
-</section>
-<section id="sobre" class="level2">
-<h2 class="anchored" data-anchor-id="sobre">Sobre mim</h2>
-<p align="center">
-<img src="images/caio.jpg" alt="Caio Velasco" width="180" style="border-radius: 50%; margin-top: 10px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<p><a name="topo"></a></p>
+<div class="landing-shell">
+<section class="course-hero">
+<div class="hero-copy">
+<p class="eyebrow">
+PRIMEIRA TURMA • WAITLIST ABERTA
 </p>
-<p><strong>Caio Velasco</strong> é Engenheiro Mecânico <em>Cum Laude</em> pela <strong>UFRJ</strong> e Mestre em Economia e Políticas Públicas pela <strong>UCLA</strong>, com formação em Econometria e Inferência Causal.</p>
-<p>Também cursou parte de um doutorado em Economia na Holanda e trabalhou nos últimos anos com <strong>Data Science, Analytics Engineering e Data Engineering</strong> em projetos para empresas no Brasil, Estados Unidos e Europa.</p>
-<p>Antes disso, fundou o <strong>MePrepara</strong>, plataforma de ensino de Matemática para os exames GRE e GMAT. Quase gabaritou a parte de matemática do GRE, atingindo <strong>94th percentile</strong> (168 Quant).</p>
-<p>Sua abordagem combina <strong>rigor matemático, intuição e aplicação</strong>.</p>
-<blockquote class="blockquote">
-<p>Meu objetivo não é fazer você decorar mais coisas.<br>
-É fazer com que cada nova coisa passe a fazer sentido.</p>
-</blockquote>
+<h1>
+<span>Fundamentos</span> para Inferência Causal
+</h1>
+<p class="hero-subtitle">
+Construa a base de <strong>Matemática, Probabilidade e Inferência Estatística</strong> necessária para entender <strong>Inferência Causal</strong> com rigor, sem decoreba.
+</p>
+<p><a class="hero-cta" href="#waitlist">ENTRAR NA WAITLIST <span>→</span></a></p>
+<p class="hero-note">
+Aulas ao Vivo &nbsp;•&nbsp; Exercícios &nbsp;•&nbsp; Comunidade &nbsp;•&nbsp; Projetos Mão-na-Massa com Python
+</p>
+</div>
+<div class="hero-photo-wrap">
+<p><img src="images/caio_ucla.png" alt="Caio Velasco" class="hero-photo"></p>
+</div>
 </section>
-<section id="formulario" class="level2">
-<h2 class="anchored" data-anchor-id="formulario">📝 Quero participar</h2>
-<p>Se a proposta fizer sentido para você, deixe seu contato abaixo.</p>
-<p>Você será avisado quando abrirem as inscrições.</p>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScGXyserKH8vEb4IhT7G2YLYf6_htcMTWx6YGRoOZH9XDKjnQ/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+<section class="offer-grid">
+<div class="offer-copy">
+<p class="section-kicker">
+O QUE O CURSO OFERECE
+</p>
+<h2 class="anchored">
+Aprenda a base.
+</h2>
+<p class="offer-intro">
+A proposta é construir o raciocínio com <strong>rigor</strong>, <strong>muita intuição</strong> e <strong>muita prática</strong>.
+</p>
+<div class="feature-item">
+<div class="feature-check">
+✓
+</div>
+<div>
+<strong>Aulas ao vivo, passo a passo</strong>
+<p>
+Da Probabilidade à Inferência Causal, conectando cada conceito ao anterior.
+</p>
+</div>
+</div>
+<div class="feature-item">
+<div class="feature-check">
+✓
+</div>
+<div>
+<strong>Exercícios para consolidar</strong>
+<p>
+Relembrando o tempo das cavernas, teremos exercícios lápis-e-papel e isso te tornará um ninja em tempos de IA.
+</p>
+</div>
+</div>
+<div class="feature-item">
+<div class="feature-check">
+✓
+</div>
+<div>
+<strong>Projetos práticos com Python</strong>
+<p>
+Depois de aprender a base com os exercícios lápis-e-papel, vai chegar a hora de usar Python para projetos de Regressão e de Inferência Causal.
+</p>
+</div>
+</div>
+<div class="feature-item">
+<div class="feature-check">
+✓
+</div>
+<div>
+<strong>Comunidade e feedback</strong>
+<p>
+Um espaço para perguntas, discussão e acompanhamento durante o curso.
+</p>
+</div>
+</div>
+</div>
+<div id="waitlist" class="waitlist-card">
+<p class="waitlist-label">
+PRIMEIRA TURMA
+</p>
+<h2 class="anchored">
+Entre na waitlist
+</h2>
+<p class="waitlist-copy">
+Estou preparando a primeira turma do curso. Deixe seus dados para receber as informações de abertura, datas e inscrições.
+</p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-GhEEzDXQHpE6WA7tGYGF9WbjMvkKC-WQxc6f4L6Ri_nCow/viewform?embedded=true" width="100%" frameborder="0" marginheight="0" marginwidth="0">
 Carregando…
 </iframe>
-
-
+</div>
 </section>
+<section class="curriculum-section" id="conteudo">
+<div class="curriculum-intro">
+<p class="section-kicker">
+O QUE VOCÊ VAI APRENDER
+</p>
+<h2 class="anchored">
+Quatro módulos.
+</h2>
+<p>
+Uma sequência didática de blocos de conhecimento: <strong>Probabilidade → Inferência Estatística → Regressão → Inferência Causal.</strong>
+</p>
+</div>
+<div class="module-grid">
+<article class="module-card">
+<div class="module-top">
+<div class="module-number">
+01
+</div>
+<div class="module-tag">
+FUNDAMENTOS
+</div>
+</div>
+<h3 class="anchored">
+Probabilidade
+</h3>
+<p class="module-question">
+Como representar matematicamente a incerteza presente nos dados?
+</p>
+<ul class="module-topics">
+<li>
+DGP, amostragem e variáveis aleatórias
+</li>
+<li>
+Distribuições de probabilidade
+</li>
+<li>
+Esperança, variância e covariância
+</li>
+<li>
+Condicionamento e independência
+</li>
+</ul>
+</article>
+<article class="module-card">
+<div class="module-top">
+<div class="module-number">
+02
+</div>
+<div class="module-tag">
+APRENDER COM DADOS
+</div>
+</div>
+<h3 class="anchored">
+Inferência Estatística
+</h3>
+<p class="module-question">
+Como usar uma amostra para aprender sobre aquilo que não observamos?
+</p>
+<ul class="module-topics">
+<li>
+População, parâmetros e estimadores
+</li>
+<li>
+<em>Sampling distributions</em> e erro padrão
+</li>
+<li>
+Lei dos Grandes Números e Teorema Central do Limite
+</li>
+<li>
+Intervalos de confiança, testes e p-valores
+</li>
+</ul>
+</article>
+<article class="module-card">
+<div class="module-top">
+<div class="module-number">
+03
+</div>
+<div class="module-tag">
+MODELAGEM
+</div>
+</div>
+<h3 class="anchored">
+Regressão
+</h3>
+<p class="module-question">
+O que estamos dizendo quando afirmamos que X está associado a Y, em média?
+</p>
+<ul class="module-topics">
+<li>
+Expectativa condicional e regressão linear
+</li>
+<li>
+OLS e interpretação dos coeficientes
+</li>
+<li>
+Incerteza, hipóteses e erros padrão
+</li>
+<li>
+Regressão múltipla, interações e especificação
+</li>
+</ul>
+</article>
+<article class="module-card module-card-accent">
+<div class="module-top">
+<div class="module-number">
+04
+</div>
+<div class="module-tag">
+CAUSALIDADE
+</div>
+</div>
+<h3 class="anchored">
+Inferência Causal
+</h3>
+<p class="module-question">
+Quando podemos sair de associação para uma afirmação causal?
+</p>
+<ul class="module-topics">
+<li>
+<em>Potential outcomes</em>, ATE e contrafactuais
+</li>
+<li>
+Randomização, RCTs e A/B Testing
+</li>
+<li>
+<em>Confounding</em> e identificação causal
+</li>
+<li>
+Fundamentos dos principais desenhos causais
+</li>
+</ul>
+</article>
+</div>
+</section>
+<div class="section-divider" aria-hidden="true">
+
+</div>
+<section class="fit-section">
+<div id="publico" class="fit-card">
+<p class="section-kicker">
+PARA QUEM É
+</p>
+<h2 class="anchored">
+Para quem quer entender, não apenas executar.
+</h2>
+<p class="fit-intro">
+Este curso é para quem trabalha — ou quer trabalhar — com dados e sente que começou a usar conceitos que nunca teve a oportunidade de entender profundamente.
+</p>
+<ul class="fit-list">
+<li>
+Profissionais de <strong>Data Science, Analytics, Machine Learning ou Experimentação</strong>
+</li>
+<li>
+Alunos de Graduação, Mestrado ou Doutorado que precisam aprender estatística
+</li>
+<li>
+Quem já estudou Estatística, mas sente lacunas na base
+</li>
+<li>
+Quem quer estudar <strong>Inferência Causal</strong> com mais profundidade
+</li>
+<li>
+Quem prefere entender uma ideia a simplesmente decorar uma fórmula
+</li>
+</ul>
+</div>
+<div id="requisitos" class="prereq-card">
+<p class="section-kicker">
+PRÉ-REQUISITOS
+</p>
+<h2 class="anchored">
+Você não precisa vir de exatas.
+</h2>
+<p class="prereq-intro">
+Você não precisa ter formação em Matemática, Estatística ou Engenharia. Mas este é um curso quantitativo: vamos usar matemática para entender de onde as ideias vêm — não apenas decorar fórmulas.
+</p>
+<div class="prereq-items">
+<div class="prereq-item">
+<span>01</span>
+<p>
+<strong>Álgebra e funções</strong><br> Frações, potências, equações, funções, gráficos, reta, inclinação e intercepto.
+</p>
+</div>
+<div class="prereq-item">
+<span>02</span>
+<p>
+<strong>Notação matemática</strong><br> Conforto básico para ler expressões matemáticas. Em particular, vamos usar bastante somatórios (Σ), médias e índices.
+</p>
+</div>
+<div class="prereq-item">
+<span>03</span>
+<p>
+<strong>Cálculo básico</strong><br> Uma familiaridade intuitiva com derivadas e integrais é suficiente. Quando esses conceitos aparecerem, revisaremos o que for necessário.
+</p>
+</div>
+<div class="prereq-item">
+<span>04</span>
+<p>
+<strong>Disposição para raciocinar</strong><br> Mais importante que lembrar fórmulas é estar disposto a acompanhar argumentos passo a passo e resolver exercícios.
+</p>
+</div>
+</div>
+<p class="prereq-note">
+<strong>Python é bem-vindo, mas não obrigatório.</strong> Vamos usá-lo quando ajudar a visualizar, simular ou aplicar os conceitos.
+</p>
+</div>
+</section>
+<section class="about-section" id="sobre">
+<div class="about-photo">
+<p><img src="images/caio_ucla.png" alt="Caio Velasco"></p>
+</div>
+<div class="about-copy">
+<p class="section-kicker">
+QUEM VAI TE GUIAR
+</p>
+<h2 class="anchored">
+Caio Velasco
+</h2>
+<p>
+Sou Engenheiro Mecânico <em>Cum Laude</em> pela <strong>UFRJ</strong> e Mestre em Economia e Políticas Públicas pela <strong>UCLA</strong>, onde estudei Econometria e Inferência Causal.
+</p>
+<p>
+Também cursei parte de um doutorado em Economia na Holanda e trabalhei nos últimos anos com <strong>Data Science, Analytics Engineering e Data Engineering</strong> em projetos no Brasil, Estados Unidos e Europa.
+</p>
+<p>
+Antes disso, fundei o <strong>MePrepara</strong>, plataforma de ensino de Matemática para GRE e GMAT. Este curso junta justamente as três coisas que mais gosto de fazer: <strong>entender a base, tornar conceitos difíceis intuitivos e aplicar tudo em problemas reais.</strong>
+</p>
+<div class="about-highlights">
+<div>
+<p><strong>UFRJ</strong> <span>Engenharia Mecânica · Cum Laude</span></p>
+</div>
+<div>
+<p><strong>UCLA</strong> <span>Economia &amp; Políticas Públicas</span></p>
+</div>
+<div>
+<p><strong>Dados</strong> <span>Experiência no Brasil, EUA e Europa</span></p>
+</div>
+</div>
+</div>
+</section>
+<section class="final-cta">
+<p class="section-kicker">
+PRIMEIRA TURMA
+</p>
+<h2 class="anchored">
+Quer construir essa base comigo?
+</h2>
+<p>
+Entre na waitlist para receber as informações sobre abertura da turma, datas e inscrições.
+</p>
+<p><a class="hero-cta" href="#waitlist">ENTRAR NA WAITLIST <span>→</span></a></p>
+</section>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

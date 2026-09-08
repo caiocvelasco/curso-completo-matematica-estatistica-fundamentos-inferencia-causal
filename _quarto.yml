@@ -4,29 +4,39 @@ project:
 
 website:
   title: ""
-  description: "Fundamentos da Inferência Causal: um curso completo da base matemática e estatística"
+  description: "Fundamentos para Inferência Causal: Matemática, Probabilidade, Inferência Estatística, Regressão e Inferência Causal"
+
+  search: false
+
   navbar:
     left:
       - text: "Início"
         href: "index.html#topo"
-      - text: "Motivação"
-        href: "index.html#motivacao"
-      - text: "Objetivo"
-        href: "index.html#objetivo"
-      - text: "Pré-requisitos"
-        href: "index.html#requisitos"
+
+      - text: "O curso"
+        href: "index.html#curso"
+
       - text: "Conteúdo"
         href: "index.html#conteudo"
-      - text: "Inscreva-se"
-        href: "index.html#formulario"
+
+      - text: "Para quem"
+        href: "index.html#publico"
+
+      - text: "Pré-requisitos"
+        href: "index.html#requisitos"
+
       - text: "Sobre"
         href: "index.html#sobre"
+
+      - text: "Junte-se a Waitlist"
+        href: "index.html#waitlist"
+
   page-footer:
     left: "© 2026 Caio Velasco"
     right: "Construído com ❤️"
 
 format:
   html:
-    theme: flatly    # cosmo or litera, simplex, flatly for readability
+    theme: flatly
     smooth-scroll: false
     css: styles.css

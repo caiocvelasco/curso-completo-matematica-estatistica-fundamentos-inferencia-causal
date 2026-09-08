@@ -46,7 +46,7 @@ Activate it.
 ### Windows
 
 ```bash
-.venv\Scripts\activate
+source .venv/Scripts/activate
 ```
 
 ### macOS / Linux
