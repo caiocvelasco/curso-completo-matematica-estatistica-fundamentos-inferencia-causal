@@ -292,18 +292,130 @@ html {
   margin-bottom: 1.3rem;
 }
 
-/* O iframe ocupa o espaço restante do card.
-   O card acompanha a altura total da coluna esquerda e o Google Form
-   rola dentro dessa área. */
-.waitlist-card iframe {
+/* --------- Formulário nativo da waitlist --------- */
+#waitlist-native-form {
   width: 100%;
-  flex: 1 1 0;
-  min-height: 0;
-  border: 0;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  margin-top: 0.15rem;
+}
+
+#waitlist-native-form label {
   display: block;
+  margin: 0 0 0.42rem 0;
+  color: #293238;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+#waitlist-native-form input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 1rem 0;
+  padding: 0.82rem 0.95rem;
+
+  border: 1px solid #cfd9d5;
+  border-radius: 9px;
+  outline: none;
+
+  background: #ffffff;
+  color: #1f2937;
+
+  font-family: inherit;
+  font-size: 0.98rem;
+  line-height: 1.25;
+
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.02);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+#waitlist-native-form input::placeholder {
+  color: #9aa4a1;
+  opacity: 1;
+}
+
+#waitlist-native-form input:hover {
+  border-color: #b9c8c3;
+}
+
+#waitlist-native-form input:focus {
+  border-color: var(--accent);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(38, 175, 139, 0.12);
+}
+
+#waitlist-submit {
+  width: 100%;
+  margin-top: 0.2rem;
+  padding: 0.9rem 1.15rem;
+
+  border: 0;
+  border-radius: 9px;
+
+  background: var(--accent);
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 0.94rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+#waitlist-submit:hover {
+  opacity: 0.93;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 16px rgba(38, 175, 139, 0.18);
+}
+
+#waitlist-submit:focus-visible {
+  outline: 3px solid rgba(38, 175, 139, 0.22);
+  outline-offset: 3px;
+}
+
+#waitlist-submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
+  transform: none;
+  box-shadow: none;
+}
+
+#waitlist-success {
+  margin-top: 0.4rem;
+  padding: 1rem 1.1rem;
+
+  border: 1px solid rgba(38, 175, 139, 0.28);
+  border-radius: 10px;
+
+  background: #eaf8f4;
+  color: #176f59;
+
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+#waitlist-success[hidden] {
+  display: none !important;
+}
+
+/* iframe usado apenas como destino invisível do envio ao Google Forms */
+#waitlist-hidden-iframe {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  border: 0 !important;
 }
 
 /* --------- Conteúdo com scroll --------- */
@@ -352,15 +464,7 @@ html {
   .offer-copy {
     padding: 0;
   }
-
-  /* Quando as colunas empilham, damos uma altura própria ao formulário. */
-  .waitlist-card iframe {
-    height: 650px;
-    min-height: 650px;
-    flex: none;
-  }
-
-  .hero-photo-wrap {
+.hero-photo-wrap {
     justify-self: center;
   }
 }
@@ -394,12 +498,14 @@ html {
     padding: 1.2rem;
   }
 
-  .waitlist-card iframe {
-    height: 600px;
-    min-height: 600px;
+  #waitlist-native-form input {
+    padding: 0.78rem 0.85rem;
   }
 
-  .about-mini {
+  #waitlist-submit {
+    padding: 0.86rem 1rem;
+  }
+.about-mini {
     grid-template-columns: 1fr;
     text-align: center;
   }

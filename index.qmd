@@ -89,14 +89,101 @@ A proposta é construir o raciocínio com <strong>rigor</strong>, <strong>muita 
 Estou preparando a primeira turma do curso. Deixe seus dados para receber as informações de abertura, datas e inscrições.
 </p>
 
+<form
+  id="waitlist-native-form"
+  action="https://docs.google.com/forms/d/e/1FAIpQLScyDL0yrgmfypED88UhUn9P0kuiKJo1PqZxPzEBx6vacdz6kQ/formResponse"
+  method="POST"
+  target="waitlist-hidden-iframe"
+>
+
+<label for="waitlist-name">Nome completo *</label>
+<input
+  id="waitlist-name"
+  type="text"
+  name="entry.2109223730"
+  autocomplete="name"
+  required
+>
+
+<label for="waitlist-email">Email *</label>
+<input
+  id="waitlist-email"
+  type="email"
+  name="entry.1826589210"
+  autocomplete="email"
+  required
+>
+
+<label for="waitlist-whatsapp">WhatsApp *</label>
+<input
+  id="waitlist-whatsapp"
+  type="tel"
+  name="entry.1489132314"
+  autocomplete="tel"
+  placeholder="(21) 99999-0021"
+  required
+>
+
+<label for="waitlist-location">Estado, Cidade *</label>
+<input
+  id="waitlist-location"
+  type="text"
+  name="entry.1068005173"
+  placeholder="RJ, Rio de Janeiro"
+  required
+>
+
+<button type="submit" id="waitlist-submit">
+ENTRAR NA WAITLIST →
+</button>
+
+</form>
+
+<div id="waitlist-success" hidden>
+✓ Pronto! Você entrou na waitlist. Obrigado mesmo por confiar!
+</div>
+
 <iframe
-src="https://docs.google.com/forms/d/e/1FAIpQLSe-GhEEzDXQHpE6WA7tGYGF9WbjMvkKC-WQxc6f4L6Ri_nCow/viewform?embedded=true"
-width="100%"
-frameborder="0"
-marginheight="0"
-marginwidth="0">
-Carregando…
+  name="waitlist-hidden-iframe"
+  id="waitlist-hidden-iframe"
+  style="display:none;">
 </iframe>
+
+<script>
+(function () {
+
+  const form = document.getElementById("waitlist-native-form");
+  const iframe = document.getElementById("waitlist-hidden-iframe");
+  const success = document.getElementById("waitlist-success");
+  const button = document.getElementById("waitlist-submit");
+
+  let submitted = false;
+
+  form.addEventListener("submit", function () {
+    submitted = true;
+
+    button.disabled = true;
+    button.textContent = "ENVIANDO...";
+  });
+
+  iframe.addEventListener("load", function () {
+
+    if (!submitted) return;
+
+    form.style.display = "none";
+    success.hidden = false;
+
+    if (typeof gtag === "function") {
+      gtag("event", "generate_lead", {
+        lead_source: "waitlist",
+        course_name: "fundamentos_inferencia_causal"
+      });
+    }
+
+  });
+
+})();
+</script>
 
 </div>
 
