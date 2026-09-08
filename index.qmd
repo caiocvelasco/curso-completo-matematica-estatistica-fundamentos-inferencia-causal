@@ -294,6 +294,7 @@ Vamos usá-lo quando ajudar a visualizar, simular ou aplicar os conceitos.
 
 <p class="section-kicker">QUEM VAI TE GUIAR</p>
 
+<div class="about-heading">
 <h2>Caio Velasco</h2>
 
 <div class="linkedin-profile-wrap">
@@ -308,6 +309,8 @@ Vamos usá-lo quando ajudar a visualizar, simular ou aplicar os conceitos.
     </svg>
     <span>LinkedIn</span>
   </a>
+</div>
+
 </div>
 
 <p>

@@ -794,6 +794,33 @@ html {
   line-height: 1.72;
 }
 
+.about-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+
+  /* única linha divisória abaixo do nome + LinkedIn */
+  border-bottom: 1px solid #e2e8e6;
+}
+
+.about-heading h2 {
+  margin: 0;
+  padding: 0 !important;
+
+  width: auto !important;
+  max-width: none !important;
+  flex: 0 0 auto;
+
+  /* remove a linha padrão do h2 do Quarto */
+  border-bottom: none !important;
+}
+
 .about-highlights {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -856,7 +883,19 @@ html {
 }
 
 .linkedin-profile-wrap {
-  margin: 0 0 1rem 0;
+  margin: 0;
+  flex: 0 0 auto;
+  transform: translateY(4px);
+}
+
+/* Quarto/Pandoc pode envolver o <a> em um <p>.
+   Esse parágrafo traz margem inferior padrão e cria o espaço indesejado. */
+.linkedin-profile-wrap > p {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
 .linkedin-profile span {
