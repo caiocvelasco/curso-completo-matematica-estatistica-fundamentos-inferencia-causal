@@ -821,33 +821,49 @@ html {
   line-height: 1.35;
 }
 
-.linkedin-link {
+.linkedin-profile,
+.linkedin-profile:visited {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  margin: -0.2rem 0 1.4rem 0;
-  color: #0a66c2;
+  gap: 0.5rem;
+
+  margin: 0;
+  padding: 0.5rem 0.8rem;
+
+  border: 1px solid #dce3e1;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #334155 !important;
+
+  font-size: 0.92rem;
   font-weight: 700;
-  text-decoration: none;
+
+  text-decoration: none !important;
+
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
-.linkedin-link:hover {
-  color: #084f96;
-  text-decoration: none;
+.linkedin-profile:hover {
+  color: #0a66c2 !important;
+  border-color: #0a66c2;
+  text-decoration: none !important;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(15, 23, 42, 0.07);
 }
 
-.linkedin-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 5px;
-  background: #0a66c2;
-  color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: 800;
-  line-height: 1;
+.linkedin-profile span {
+  text-decoration: none !important;
+}
+
+.linkedin-svg {
+  width: 21px;
+  height: 21px;
+  flex: 0 0 21px;
+  fill: #0a66c2;
 }
 
 /* --------- CTA final --------- */
