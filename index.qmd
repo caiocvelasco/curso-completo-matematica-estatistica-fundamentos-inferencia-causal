@@ -32,7 +32,7 @@ Construa a base de <strong>Matemática, Probabilidade e Inferência Estatística
 </section>
 
 
-<section class="offer-grid">
+<section class="offer-grid" id="curso">
 
 <div class="offer-copy">
 

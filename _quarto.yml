@@ -13,7 +13,7 @@ website:
       - text: "Início"
         href: "index.html#topo"
 
-      - text: "O curso"
+      - text: "Curso"
         href: "index.html#curso"
 
       - text: "Conteúdo"
@@ -40,4 +40,3 @@ format:
     theme: flatly
     smooth-scroll: false
     css: styles.css
-    
