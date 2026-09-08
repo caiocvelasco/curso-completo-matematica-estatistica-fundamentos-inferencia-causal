@@ -6,6 +6,9 @@ website:
   title: ""
   description: "Fundamentos para Inferência Causal: Matemática, Probabilidade, Inferência Estatística, Regressão e Inferência Causal"
 
+  google-analytics: "G-1CQVNDXN3S"
+  cookie-consent: true
+
   search: false
 
   navbar:
