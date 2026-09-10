@@ -22,6 +22,9 @@ website:
       - text: "Conteúdo"
         href: "index.html#conteudo"
 
+      - text: "Aula aberta"
+        href: "index.html#aula-aberta"
+
       - text: "Para quem"
         href: "index.html#publico"
 

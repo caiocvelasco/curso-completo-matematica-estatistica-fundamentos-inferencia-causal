@@ -80,12 +80,22 @@ h1, h2, h3 {
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.active {
-  color: var(--accent) !important;
+  color: #ffffff !important;
 }
 
 html {
   scroll-padding-top: 92px !important;
   scroll-behavior: smooth;
+}
+
+#curso,
+#conteudo,
+#aula-aberta,
+#publico,
+#requisitos,
+#sobre,
+#waitlist {
+  scroll-margin-top: 96px;
 }
 
 /* --------- Hero --------- */
@@ -744,6 +754,80 @@ html {
 
   .module-top {
     margin-bottom: 1.2rem;
+  }
+}
+
+
+
+/* =========================================================
+   AULA ABERTA — amostra do material do curso
+   ========================================================= */
+#aula-aberta {
+  max-width: var(--waitlist-max);
+  margin: 0 auto 3.5rem auto;
+  padding: 2.6rem 3rem;
+
+  text-align: left;
+
+  background: #eef8f5;
+  color: #1f2937;
+
+  border: 1px solid #d8ece6;
+  border-radius: 18px;
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.04);
+}
+
+#aula-aberta .section-kicker {
+  margin-bottom: 0.8rem;
+}
+
+#aula-aberta h2 {
+  max-width: none;
+  margin: 0 0 0.9rem 0;
+
+  color: #1f2937;
+  font-size: clamp(2.1rem, 4vw, 3.25rem);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+#aula-aberta p:not(.section-kicker) {
+  max-width: 860px;
+  margin: 0 0 1rem 0;
+
+  color: #5f6d68;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+#aula-aberta p:not(.section-kicker):nth-of-type(3) {
+  margin-top: 1.1rem;
+  padding: 1rem 1.1rem;
+
+  background: #ffffff;
+  border: 1px solid #dfe9e5;
+  border-radius: 11px;
+
+  color: #4f5f59;
+}
+
+#aula-aberta .hero-cta {
+  margin-top: 0.55rem;
+}
+
+#aula-aberta .hero-cta:hover {
+  box-shadow: 0 7px 16px rgba(38, 175, 139, 0.18);
+}
+
+@media (max-width: 600px) {
+  #aula-aberta {
+    margin-bottom: 2.8rem;
+    padding: 1.7rem 1.4rem;
+    border-radius: 14px;
+  }
+
+  #aula-aberta h2 {
+    font-size: 2.25rem;
   }
 }
 

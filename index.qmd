@@ -341,6 +341,31 @@ Quando podemos sair de associação para uma afirmação causal?
 
 </section>
 
+<section class="final-cta" id="aula-aberta">
+
+<p class="section-kicker">AULA ABERTA</p>
+
+<h2>Veja uma nota de aula do curso.</h2>
+
+<p>
+Quer ter uma ideia de como o conteúdo será construído? Disponibilizei gratuitamente uma das notas de aula do curso.
+</p>
+
+<p>
+<strong>Importante:</strong> esta é apenas a nota escrita que acompanhará o curso. As aulas serão <strong>ao vivo e online</strong>, com explicações, exemplos, exercícios e discussão dos conceitos.
+</p>
+
+<a
+  class="hero-cta"
+  href="https://caiocvelasco.github.io/fundamentos-inferencia-causal/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+ACESSAR NOTA DE AULA <span>→</span>
+</a>
+
+</section>
+
 <div class="section-divider" aria-hidden="true"></div>
 
 <section class="fit-section">
